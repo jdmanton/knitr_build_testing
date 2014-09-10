@@ -4,7 +4,7 @@ before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -qq haskell-platform
   - cabal update
-  - cabal install pandoc
+  - sudo cabal install --global pandoc
   - curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
   - chmod 755 ./travis-tool.sh
   - ./travis-tool.sh bootstrap
